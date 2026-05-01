@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://kevinmickael-19.github.io/projet-8-nina-carducci/sitemap.xml
