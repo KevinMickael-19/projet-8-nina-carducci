@@ -121,7 +121,8 @@ img {
 }
 
 .nav-pills .nav-link {
-	color: #000
+	color: #000;
+	cursor: pointer;
 }
 
 .item-column {
@@ -404,5 +405,4 @@ input[type="submit"] {
 	.picture {
 		width: 80%;
 	}
-	
 }
