@@ -31,41 +31,46 @@
 
 	<link rel="stylesheet" href="./assets/bootstrap/bootstrap.min.css">
 	<link rel="stylesheet" href="./assets/style.css">
-	<link rel="preconnect" href="https://fonts.googleapis.com">
+<!-- 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link
 		href="https://fonts.googleapis.com/css2?family=Inter&family=Spectral:ital,wght@0,400;1,300;1,400;1,800&display=swap"
-		rel="stylesheet">
+		rel="stylesheet"> -->
+	<!-- Préchargement des polices critiques -->
+	<link rel="preload" href="assets/fonts/inter-v20-latin-regular.woff2" as="font" type="font/woff2" crossorigin>
+	<link rel="preload" href="assets/fonts/spectral-v15-latin-800.woff2" as="font" type="font/woff2" crossorigin>
 	<link rel="icon" type="image/png" href="./assets/images/instagram.png">
 
 	<!-- Scripts -->
 
 	<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "LocalBusiness",
-  "name": "Nina Carducci",
-  "image": "assets/images/nina.webp",
-  "description": "Photographe professionnelle à Bordeaux, spécialisée portrait, mariage et événementiel.",
-  "address": {
-    "@type": "PostalAddress",
-    "streetAddress": "68 avenue Alsace-Lorraine",
-    "addressLocality": "Bordeaux",
-    "postalCode": "33200",
-    "addressCountry": "FR"
-  },
-  "telephone": "+33556677889",
-  "openingHours": "Mo-Fr 10:00-19:00",
-  "url": "https://kevinmickael-19.github.io/projet-8-nina-carducci/",
-  "priceRange": "Sur devis",
-  "sameAs": "https://www.instagram.com/ninacarducci.photo"
-}
-</script>
+		{
+		"@context": "https://schema.org",
+		"@type": "LocalBusiness",
+		"name": "Nina Carducci",
+		"image": "assets/images/nina.webp",
+		"description": "Photographe professionnelle à Bordeaux, spécialisée portrait, mariage et événementiel.",
+		"address": {
+			"@type": "PostalAddress",
+			"streetAddress": "68 avenue Alsace-Lorraine",
+			"addressLocality": "Bordeaux",
+			"postalCode": "33200",
+			"addressCountry": "FR"
+		},
+		"telephone": "+33556677889",
+		"openingHours": "Mo-Fr 10:00-19:00",
+		"url": "https://kevinmickael-19.github.io/projet-8-nina-carducci/",
+		"priceRange": "Sur devis",
+		"sameAs": "https://www.instagram.com/ninacarducci.photo"
+		}
+	</script>
+
 	<script src="./assets/bootstrap/bootstrap.bundle.min.js" defer></script>
 	<script src="https://code.jquery.com/jquery-3.4.1.min.js"
 		integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous" defer></script>
 	<script src="./assets/maugallery.js" defer></script>
 	<script src="./assets/scripts.js" defer></script>
+
 </head>
 
 <body>
@@ -84,7 +89,7 @@
 		</nav>
 	</header>
 	<main>
-		<div id="header">
+		<section id="header">
 
 			<div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
 				<div class="carousel-indicators">
@@ -135,8 +140,8 @@
 					<span class="visually-hidden">Next</span>
 				</button>
 			</div>
-		</div>
-		<div id="about">
+		</section>
+		<section id="about">
 			<div class="picture left">
 				<img src="./assets/images/nina-560.webp" width="558" height="560"
 					alt="Nina Carducci, photographe professionnelle à Bordeaux">
@@ -157,8 +162,9 @@
 					la
 					tendresse et de lumière à chaque fois que vous poserez les yeux sur vos photos.</p>
 			</div>
-		</div>
-		<div id="gallery">
+		</section>
+
+		<section id="gallery">
 			<h2 class="title">Portfolio</h2>
 			<div class="container py-3">
 				<div class="gallery" style="display: none">
@@ -191,7 +197,7 @@
 						width="440" loading="lazy" height="440"
 						alt="Portrait femme souriante - shooting photo entreprise" />
 				</div>
-			</div>
+			</section>
 			<div class="quote">
 				<figure>
 					<blockquote>
@@ -205,7 +211,7 @@
 				</figure>
 			</div>
 		</div>
-		<div id="services">
+		<section id="services">
 			<h2 class="title">Mes services</h2>
 			<div class="container">
 				<div class="service">
@@ -245,7 +251,7 @@
 					</div>
 				</div>
 			</div>
-		</div>
+		</section>
 		<div class="quote">
 			<figure>
 				<blockquote>
